@@ -1,0 +1,88 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+:root {
+  --backgroundColor: rgb(241, 241, 241);
+  --inputColor: rgb(49, 62, 79);
+  --btn: rgb(32, 210, 174);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--backgroundColor);
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backgroundColor);
+  height: 60px;
+}
+form {
+  background-color: transparent;
+}
+::placeholder {
+  font-size: 1.7rem;
+}
+.list h6 {
+  font-size: 1.3rem;
+  text-align: center;
+  font-style: italic;
+  padding: 10px;
+  color: rgb(192, 190, 190);
+}
+.add_to-do input {
+  width: 80%;
+  color: white;
+  border: none;
+  background-color: var(--inputColor);
+  outline: none;
+  height: 100%;
+  padding: 0px 0px 0px 20px;
+  font-size: 1.7rem;
+}
+.add_to-do button {
+  background-color: var(--btn);
+  font-size: 3rem;
+  width: 20%;
+  color: white;
+  height: 100%;
+  border: none;
+}
+.check_box {
+  padding: 5px;
+  border-radius: 2px;
+  border: 2.2px solid var(--backgroundColor);
+}
+ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  gap: 0.9rem;
+  background-color: white;
+  margin: 0px 0px 0.2rem 0px;
+  cursor: pointer;
+}
+ul li p {
+  flex: 1;
+  letter-spacing: 0.2rem;
+  margin-left: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
